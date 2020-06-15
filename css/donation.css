@@ -1,0 +1,275 @@
+
+body {
+  font-family: tahoma;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.profile{
+
+    padding: 30px  0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+
+    width: 283px;
+    height: 448px;
+    max-width: 300px;
+    /*margin: auto; */
+    text-align: center;
+
+   
+    left: 20%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /*Profile Box */
+    background: rgb(170, 164, 164);
+    box-shadow: 0px 4px 10px #DDDDDD;
+    border-radius: 5px;
+}
+.profile .header{
+    /*Header (Boston Skyline) */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 78.13%;
+
+    background: #6BA2D6;
+    border-radius: 5px 5px 0px 0px;
+
+    position: absolute;
+    left: -1.12%;
+    right: -6.44%;
+    top: -0.88%;
+    bottom: 77.07%;
+
+    background: url(iStock-645484518.jpg);
+    border-radius: 5px;
+}
+
+.profile .description {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 59.82%;
+    bottom: 35.49%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.profile .pic{
+
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+/*
+    position: absolute;
+    left: 21.01%;
+    right: 21.29%;
+    top: 4.06%;
+    bottom: 59.61%;
+
+    background: #B9D9F7;
+    border: 12px solid #FFFFFF;
+    box-sizing: border-box; */
+}
+
+.profile .pic::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+
+}
+
+.profile .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.profile .name{
+    position: absolute;
+    left: 14.13%;
+    right: 14.49%;
+    top: 43.3%;
+    bottom: 52.23%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.profile .location{
+    position: absolute;
+    left: 20.49%;
+    right: 20.49%;
+    top: 51.12%;
+    bottom: 43.08%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #6D6D6D;
+}
+
+.profile .donate{
+    position: absolute;
+    left: 30.04%;
+    right: 30.39%;
+    top: 87.95%;
+    bottom: 6.7%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #63D783;
+
+}
+
+.moreinfo {
+    padding-top: 300px;
+    width: 500px;
+    height: 514px;
+
+    box-shadow: 0px 4px 12px #DDDDDD;
+}
+
+.moreinfo .city {
+    position: absolute;
+    left: 8.75%;
+    right: 41.15%;
+    top: 24.71%;
+    bottom: 40.86%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+color: #6D6D6D;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    position: absolute;
+    left: 30.04%;
+    right: 30.39%;
+    top: 87.95%;
+    bottom: 6.7%;
+
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #63D783;
+
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+
+    
+   
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+
+  /*
+.greencard{
+
+
+background: #6CCA1F;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 121px;
+
+position: center;
+width: 50%;
+height: 40%;
+
+mix-blend-mode: normal
+}*/

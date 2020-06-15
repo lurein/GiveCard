@@ -1,0 +1,279 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GiveCard gives debit cards to the homeless, and provides an online platform where you can donate money directly to the regulated card of a specific homeless person, and get notified on how they spend your donation.">
+
+    <title>GiveCard :: Help </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+    function validate_required(field,alerttxt)
+    {
+    with (field)
+    {
+    if (value==null||value=="")
+      {alert(alerttxt);return false;}
+    else {return true}
+    }
+    }
+
+    function validate_form(thisform)
+    {
+    with (thisform)
+    {
+    if (validate_required(state,"Please Enter a State Name")==false)
+      {state.focus();return false;}
+    }
+    }
+    </script>
+
+  </head>
+  <body>
+    <div id = "particles-js"></div>
+    <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+
+
+    <header class="templateux-navbar dark" role="banner">
+
+      <div class="container"  data-aos="fade-down">
+        <div class="row">
+
+          <div class="col-3 templateux-logo">
+              <img src = images/giveCard.png class="img-fluid" >
+          </div>
+          <nav class="col-9 site-nav">
+            <button class="d-block d-md-none hamburger hamburger--spin templateux-toggle templateux-toggle-light ml-auto templateux-toggle-menu" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button> <!-- .templateux-toggle -->
+
+            <ul class="sf-menu templateux-menu d-none d-md-block">
+              <li>
+                <a href="index" class="animsition-link">Home</a>
+              </li>
+              <li><a href="mission" class="animsition-link">Mission</a></li>
+
+              <li><a href="team" class="animsition-link">Team</a></li>
+              <li><a href="blog" class="animsition-link">Blog</a></li>
+              <li class="active"><a href="contact" class="animsition-link">Contact</a></li>
+              <li><a href="donation" class="btn donate-button" style="color:white">Donate</a></li>
+            </ul> <!-- .templateux-menu -->
+
+          </nav> <!-- .site-nav -->
+
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </header> <!-- .templateux-navba -->
+
+
+    <!--<div class="templateux-padding" style="background-image: url(images/white.jpg);"> 
+      <div class="container">
+        <div class="row align-items-center">
+        </div>
+      </div>
+    </div>  <!-- .templateux-cover -->
+
+    <div class = "templateux-section">
+            <div class="container">
+                    <div class="col-md-12 block-heading-wrap" data-aos="fade-up">
+            
+                            <h2 class="heading mb-5 text-center"> Helping in a Time of Need</h2>
+                    </div>
+                        
+                    <div class="col-md-12">
+        <p>In this time of need as COVID-19 affects our communities and the people within them, any little bits of help can go a long way. We've compiled some resources of ways to find what you can help with, especially for the vulnerable and marginalized ❤️</p>
+            
+        </div>
+        
+    </div>
+
+    </div>
+
+    <div class = "templateux-section">
+    
+      
+            <div class="container">
+              <div class="row mb-7">
+                <div class="col-md-6">
+      
+                  <h6 data-aos="fade-up"> Find Nearby Shelters</h6>
+                  <h5 class="heading mb-3" data-aos="fade-up"> In these times of need, any little bits of help can go a long way. Find a shelter near you and see what you can help with ❤️ </h5>
+      
+      </div> <!-- .templateux-cover -->
+
+            <div class="col-md-5 pr-md-5 mb-5">
+              <form name="sheltersearch" method="get" action="http://www.homelessshelterdirectory.org/cgi-bin/widgets/shelters.cgi" target="_top" onsubmit="return validate_form(this)">
+                <div class="form-group">
+                  <label for="password2">City</label>
+                  <input name="city" type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group">
+                  <label for="password">State</label>
+                  <select name="state">
+                          <option value="" selected >Choose State (required)</option>
+          <option label="ALASKA" value="AK">ALASKA</option>
+
+          <option label="ALABAMA" value="AL">ALABAMA</option>
+          <option label="ARKANSAS" value="AR">ARKANSAS</option>
+          <option label="ARIZONA" value="AZ">ARIZONA</option>
+          <option label="CALIFORNIA" value="CA">CALIFORNIA</option>
+          <option label="COLORADO" value="CO">COLORADO</option>
+          <option label="CONNECTICUT" value="CT">CONNECTICUT</option>
+          <option label="DISTRICT OF COLUMBIA" value="DC">DISTRICT OF COLUMBIA</option>
+          <option label="DELAWARE" value="DE">DELAWARE</option>
+          <option label="FLORIDA" value="FL">FLORIDA</option>
+
+          <option label="GEORGIA" value="GA">GEORGIA</option>
+          <option label="HAWAII" value="HI">HAWAII</option>
+          <option label="IOWA" value="IA">IOWA</option>
+          <option label="IDAHO" value="ID">IDAHO</option>
+          <option label="ILLINOIS" value="IL">ILLINOIS</option>
+          <option label="INDIANA" value="IN">INDIANA</option>
+          <option label="KANSAS" value="KS">KANSAS</option>
+          <option label="KENTUCKY" value="KY">KENTUCKY</option>
+          <option label="LOUISIANA" value="LA">LOUISIANA</option>
+
+          <option label="MASSACHUSETTS" value="MA">MASSACHUSETTS</option>
+          <option label="MARYLAND" value="MD">MARYLAND</option>
+          <option label="MAINE" value="ME">MAINE</option>
+          <option label="MICHIGAN" value="MI">MICHIGAN</option>
+          <option label="MINNESOTA" value="MN">MINNESOTA</option>
+          <option label="MISSOURI" value="MO">MISSOURI</option>
+          <option label="MISSISSIPPI" value="MS">MISSISSIPPI</option>
+          <option label="MONTANA" value="MT">MONTANA</option>
+          <option label="NORTH CAROLINA" value="NC">NORTH CAROLINA</option>
+
+          <option label="NORTH DAKOTA" value="ND">NORTH DAKOTA</option>
+          <option label="NEBRASKA" value="NE">NEBRASKA</option>
+          <option label="NEW HAMPSHIRE" value="NH">NEW HAMPSHIRE</option>
+          <option label="NEW JERSEY" value="NJ">NEW JERSEY</option>
+          <option label="NEW MEXICO" value="NM">NEW MEXICO</option>
+          <option label="NEVADA" value="NV">NEVADA</option>
+          <option label="NEW YORK" value="NY">NEW YORK</option>
+          <option label="OHIO" value="OH">OHIO</option>
+          <option label="OKLAHOMA" value="OK">OKLAHOMA</option>
+
+          <option label="OREGON" value="OR">OREGON</option>
+          <option label="PENNSYLVANIA" value="PA">PENNSYLVANIA</option>
+          <option label="PUERTO RICO" value="PR">PUERTO RICO</option>
+          <option label="RHODE ISLAND" value="RI">RHODE ISLAND</option>
+          <option label="SOUTH CAROLINA" value="SC">SOUTH CAROLINA</option>
+          <option label="SOUTH DAKOTA" value="SD">SOUTH DAKOTA</option>
+          <option label="TENNESSEE" value="TN">TENNESSEE</option>
+          <option label="TEXAS" value="TX">TEXAS</option>
+          <option label="UTAH" value="UT">UTAH</option>
+
+          <option label="VIRGINIA" value="VA">VIRGINIA</option>
+          <option label="VERMONT" value="VT">VERMONT</option>
+          <option label="WASHINGTON" value="WA">WASHINGTON</option>
+          <option label="WISCONSIN" value="WI">WISCONSIN</option>
+          <option label="WEST VIRGINIA" value="WV">WEST VIRGINIA</option>
+          <option label="WYOMING" value="WY">WYOMING</option>
+          </optgroup>
+
+                        </select>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary py-3 px-5" id="submit-go" value="Find Shelters">
+                </div>
+              </form>
+            </div>
+              <div class="col-md-10 pr-md-5 mb-5">
+                  <h6 data-aos= "fade-up">Get Connected to give or recieve help </h6>
+                  <h5 class="heading mb-3" data-aos="fade-up"> <br>Foster A Family </h5>
+                  <p>This is an online resource made by students to connect families who are in extra need in these times with individuals and families who want to help. They match people based on needs such as groucery pickup, financial assistance, childcare, and other services. </p>
+              </div>
+            </div>
+            <!--<div class="col-md-7 block-map-1" id="map"></div> -->
+          <!--</div>  .row -->
+
+
+
+
+
+    <footer class="templateux-footer bg-light">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-4 pr-md-5">
+            <div class="block-footer-widget">
+              <h3>Mission</h3>
+              <p>We’re a nonprofit organization giving specialized debit cards, digital donation systems and revolutionary financial planning to the homeless. </p>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="block-footer-widget">
+                  <h3>Learn More</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="donation.html">The Process</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="block-footer-widget">
+                  <h3>Support</h3>
+                  <ul class="list-unstyled">
+
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="block-footer-widget">
+                  <h3>About Us</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="block-footer-widget">
+                  <a href="donation.html" class="btn btn-primary mb-3">Donate Now</a>
+                  <p>Connect With Us</p>
+                  <ul class="list-unstyled block-social">
+                    <li><a href=" https://www.instagram.com/thegivecardproject/"class="p-1"><span class="icon-instagram"></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/givecard/about/" class="p-1"><span class="icon-linkedin"></span></a></li>
+                    <li><a href="https://www.facebook.com/TheGiveCardProject/" class="p-1"><span class="icon-facebook-square"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- .row -->
+
+          </div>
+        </div> <!-- .row -->
+
+        <div class="row pt-5 text-left"></div>
+          <div class="col-md-12 text-left"></div><p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | GiveCard
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p></div>
+        </div> <!-- .row -->
+
+      </div>
+    </footer> <!-- .templateux-footer -->
+
+
+   </div> <!-- .js-animsition -->
+
+
+  <script src="js/scripts-all.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src = "js/particles.js"></script>
+  <script src="js/app.js"></script>
+
+  </body>
+</html>
