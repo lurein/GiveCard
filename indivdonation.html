@@ -1,7 +1,8 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162248727-1"></script>
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162248727-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -10,9 +11,13 @@
       gtag('config', 'UA-162248727-1');
     </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="GiveCard gives debit cards to the homeless, and provides an online platform where you can donate money directly to the regulated card of a specific homeless person, and get notified on how they spend your donation.">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <meta name="description" content="GiveCard gives debit cards to the
+      homeless, and provides an online platform where you can donate money
+      directly to the regulated card of a specific homeless person, and get
+      notified on how they spend your donation.">
+
     <title>GiveCard :: Debit Cards for the Homeless</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/donation.css">
@@ -21,49 +26,60 @@
 
 
   <body>
-   <style>
+    <style>
      .container{
      padding-top: 100px}
     </style>
 
-    <div class = "container">
-      <div class = "row">
-        <div class = "col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="container">
+      <div class="row">
 
-          <div class = "profile">
-        
-            <img  class = "picture" src = "images/anna.jpg" alt = "Picture" style = "width:75%"> 
-            
-            <h4 class = "description" >Single Mom, dog lover, and big Red Sox fan! </h4> 
-            <h1 class = "name" > Alexa</h1>
-            <h3 class = "location"> Boston, MA</h3>
-            <button class = "donate" onclick = "on()"> Donate </button>
+
+        <div class="profile">
+          <img class="picture" src="images/anna.jpg" alt="Picture"
+            style="width:60%">
+          <h4 class="description">Single Mom, dog lover, and big Red Sox fan!
+          </h4>
+          <h1 class="name"> Alexa</h1>
+          <h3 class="location"> Boston, MA</h3>
+          <button class="donate" onclick="on()"> Donate </button>
         </div>
       </div>
-    
-      <div class = "col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class = "profile">
-            
-          <img  src = "images/diksha.jpg" alt = "Picture" style = "width:50%"> 
-          
-          <p class = "description" >Single Mom, dog lover, and big Red Sox fan! </p> 
-          <p class = "name" > Dave </p>
-          <p class = "location"> Boston, MA</p>
-          <button class = "donate" onclick = "on()"> Donate </button>
+
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="profile">
+
+          <img src="images/diksha.jpg" alt="Picture" style="width:60%">
+
+          <p class="description">Single Mom, dog lover, and big Red Sox fan!
+          </p>
+          <p class="name"> Dave </p>
+          <p class="location"> Boston, MA</p>
+          <button class="donate" onclick="on()"> Donate </button>
         </div>
+      </div>
 
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="profile">
 
+          <img src="images/diksha.jpg" alt="Picture" style="width:60%">
 
+          <p class="description">Single Mom, dog lover, and big Red Sox fan!
+          </p>
+          <p class="name"> Dave </p>
+          <p class="location"> Boston, MA</p>
+          <button class="donate" onclick="on()"> Donate </button>
         </div>
       </div>
     </div>
-    
+  </div>
 
-<!--
+
+
+
+  <!--
 <div id="overlay" onclick = "off ()"></div>
   <button onclick="on()"> Turn on overlay effect </button> -->
-  
-
   <script>
       function on() {
         document.getElementById("overlay").style.display = "block";
@@ -73,7 +89,4 @@
         document.getElementById("overlay").style.display = "none";
       }
       </script>
-
-
-
-  </body>
+</body>
