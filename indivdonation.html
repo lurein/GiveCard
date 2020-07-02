@@ -21,6 +21,13 @@
     <title>GiveCard :: Debit Cards for the Homeless</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/donation.css">
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
 
 
@@ -30,6 +37,8 @@
      .container{
      padding-top: 100px}
     </style>
+
+
 
     <div class="container">
       <div class="row">
@@ -42,14 +51,15 @@
           </h4>
           <h1 class="name"> Alexa</h1>
           <h3 class="location"> Boston, MA</h3>
-          <button class="donate" onclick="on()"> Donate </button>
+          <button class="donate" onclick="on()" data-toggle="modal"
+            data-target="#myModal"> Donate </button>
         </div>
       </div>
 
       <div class="col" data-aos="fade-up" data-aos-delay="200">
         <div class="profile">
 
-          <img src="images/diksha.jpg" alt="Picture" style="width:60%">
+          <img class="picture" src="images/diksha.jpg" alt="Picture">
 
           <p class="description">Single Mom, dog lover, and big Red Sox fan!
           </p>
@@ -62,7 +72,7 @@
       <div class="col" data-aos="fade-up" data-aos-delay="200">
         <div class="profile">
 
-          <img src="images/diksha.jpg" alt="Picture" style="width:60%">
+          <img class="picture" src="images/lurein.jpg" alt="Picture">
 
           <p class="description">Single Mom, dog lover, and big Red Sox fan!
           </p>
@@ -74,56 +84,48 @@
     </div>
   </div>
 
-  <!-- Load Stripe.js on your website. -->
-  <script src="https://js.stripe.com/v3"></script>
 
-  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-  <button
-    style="background-color:#6772E5;color:#FFF;padding:8px
-    12px;border:0;border-radius:4px;font-size:1em"
-    id="checkout-button-price_1GyPucIuShyCaw1MlwD0rkMn"
-    role="link">
-    Checkout
-  </button>
 
-  <div id="error-message"></div>
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-  <script>
-(function() {
-  var stripe = Stripe('pk_live_Lndk6fjH1tHWewsB6itSR5vy');
+      <!-- Modal content-->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <span clas>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
 
-  var checkoutButton = document.getElementById('checkout-button-price_1GyPucIuShyCaw1MlwD0rkMn');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1GyPucIuShyCaw1MlwD0rkMn', quantity: 1}],
-      mode: 'subscription',
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + '//www.givecard.io/success',
-      cancelUrl: window.location.protocol + '//www.givecard.io/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
   <!--
-<div id="overlay" onclick = "off ()"></div>
-  <button onclick="on()"> Turn on overlay effect </button> -->
+  <div id="overlay" onclick="off ()"></div>
+  <button onclick="on()"> Turn on overlay effect </button>-->
   <script>
       function on() {
         document.getElementById("overlay").style.display = "block";
@@ -132,5 +134,31 @@
       function off() {
         document.getElementById("overlay").style.display = "none";
       }
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+         modal.style.display = "none";
+      }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
       </script>
 </body>
