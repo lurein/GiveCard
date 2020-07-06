@@ -305,6 +305,7 @@ mix-blend-mode: normal
 .modal-content {
   position: relative;
   background-color: #fefefe;
+  border-radius: 31px;
   margin: auto;
   padding: 10px;
   border: 1px solid #888;
@@ -344,7 +345,7 @@ mix-blend-mode: normal
 /* The Close Button */
 
 .close {
-  color: red;
+  color: rgb(105, 105, 105);
   float: right;
   font-size: 28px;
   font-weight: bold;
