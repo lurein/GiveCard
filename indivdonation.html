@@ -174,42 +174,57 @@ function stripeTokenHandler(token) {
           <h4 class="modal-title">Alexa</h4>
         </div>
         <div class="modal-body">
-          <p>My son is the person that makes me happiest in the world. He's one
-            and a half years' old now. He's very cute, but sometimes he's
-            naughty as well. He can be quite a handful when he's in a mood! I'm
-            currently living in a hostel. Southwark Council moved us here in
-            March as the house we were living in before was too crowded. It
-            would mean so much to me to have my own place, somewhere with space
-            where my son can run around, play and be happy. Next year he's going
-            to turn two, which means he'll be able to go to nursery which will
-            give me time to achieve some of the things I'd like to do. First I'm
-            going to get my driver's licence. After that, the stability I'll
-            have will mean I can look for work. I might start by working as a
-            supermarket assistant, but in the future my dream is to work in
-            beauty. </p>
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-3">
+                <p>My son is the person that makes me happiest in the world.
+                  He's one
+                  and a half years' old now. He's very cute, but sometimes he's
+                  naughty as well. He can be quite a handful when he's in a
+                  mood! I'm
+                  currently living in a hostel. Southwark Council moved us here
+                  in
+                  March as the house we were living in before was too crowded.
+                  It
+                  would mean so much to me to have my own place, somewhere with
+                  space
+                  where my son can run around, play and be happy. Next year he's
+                  going
+                  to turn two, which means he'll be able to go to nursery which
+                  will
+                  give me time to achieve some of the things I'd like to do.
+                  First I'm
+                  going to get my driver's licence. After that, the stability
+                  I'll
+                  have will mean I can look for work. I might start by working
+                  as a
+                  supermarket assistant, but in the future my dream is to work
+                  in
+                  beauty. </p>
+              </div>
+
+              <div class="col-md-9">
+                <div class="modal-donate">
+                  <!-- Begin Give Lively Fundraising Widget -->
+                  <script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/simple_donation/givecard-inc.js?show_suggested_amount_buttons=true&show_in_honor_of=false&address_required=false&has_required_custom_question=null&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100&suggested_donation_amounts[]=250';document.getElementsByTagName('head')[0].appendChild(gl);</script><div
+                    id="give-lively-widget" class="gl-simple-donation-widget"></div>
+                  <!-- End Give Lively Fundraising Widget -->
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
 
 
+
         <div class="modal-footer">
-          <form action="/charge" method="post" id="payment-form">
-            <div class="StripeElement">
-              <label for="card-element">
-                Credit or debit card
-              </label>
-              <input type="text" id="card">
-              <div id="card-element">
-                <!-- A Stripe Element will be inserted here. -->
-              </div>
 
-              <!-- Used to display form errors. -->
-              <div id="card-errors" role="alert"></div>
-            </div>
 
-            <button>Submit Payment</button>
-          </form>
-          <!--
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        -->
+
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
         </div>
       </div>
 

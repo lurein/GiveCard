@@ -20,7 +20,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap; */
   margin-right: -15px;
   margin-left: -15px;
   align-items: center;
@@ -298,6 +298,7 @@ mix-blend-mode: normal
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
+  min-width: 600px;
 }
 
 /* Modal Content */
@@ -309,13 +310,22 @@ mix-blend-mode: normal
   margin: auto;
   padding: 10px;
   border: 1px solid #888;
-  width: 50%;
+  width: 75%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
   overflow: auto;
+}
+
+.modal-content p {
+  font-size: 13px;
+  padding: 20px;
+}
+
+.modal-content .modal-donate {
+  width: 75%
 }
 
 /* Add Animation */
@@ -355,33 +365,4 @@ mix-blend-mode: normal
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-/**
- * The CSS shown here will not be introduced in the Quickstart guide, but shows
- * how you can use CSS to style your Element's container.
- */
-
-.StripeElement {
-  box-sizing: border-box;
-  height: 40px;
-  padding: 10px 12px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  background-color: white;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
-  -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
-}
-
-.StripeElement--focus {
-  box-shadow: 0 1px 3px 0 #cfd7df;
-}
-
-.StripeElement--invalid {
-  border-color: #fa755a;
-}
-
-.StripeElement--webkit-autofill {
-  background-color: #fefde5 !important;
 }
