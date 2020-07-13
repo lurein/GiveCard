@@ -584,6 +584,7 @@ pre code {
   position: relative;
   ;
   min-height: 1px;
+  min-width: 200px;
   padding-right: 1px;
   padding-left: 15px;
   float: "right"
