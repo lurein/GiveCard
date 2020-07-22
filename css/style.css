@@ -22947,7 +22947,7 @@ a:hover {
 }
 
 .templateux-footer, .templateux-section {
-  padding: 11em 0;
+  padding: 6em 0;
   padding-bottom: 1;
 }
 
@@ -23297,7 +23297,7 @@ h6 {
 
 .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner, .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:after, .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:before {
   background-color: rgb(255, 255, 255);
-  float:left
+  float: left
 }
 
 .templateux-navbar .templateux-toggle.templateux-toggle-light:hover {
