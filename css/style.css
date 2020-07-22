@@ -23262,7 +23262,7 @@ h6 {
   width: 100%;
   position: relative;
   background-color: rgb(0, 0, 0);
-  padding-top: 15px;
+  padding-top: 10px;
   padding-right: 1px;
   z-index: 100;
   float: right
@@ -23296,7 +23296,8 @@ h6 {
 }
 
 .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner, .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:after, .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:before {
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
+  float:left
 }
 
 .templateux-navbar .templateux-toggle.templateux-toggle-light:hover {
