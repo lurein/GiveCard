@@ -1,4 +1,4 @@
 # The official site for GiveCard
 
-Maintained by Anna Peterson & Lurein Perera
+Maintained by Anna Peterson, Lurein Perera & Will Peters
 
