@@ -569,6 +569,9 @@ pre code {
   margin-right: -15px;
   margin-left: -15px
 }
+.row .founders{
+  justify-content: space-evenly;
+}
 
 .no-gutters {
   margin-right: 0;
@@ -23446,7 +23449,7 @@ h6 {
 }
 
 .templateux-navbar.dark .templateux-menu a:active, .templateux-navbar.dark .templateux-menu a:focus, .templateux-navbar.dark .templateux-menu a:hover {
-  color: rgb(108, 202, 31)
+  color: #02D97B
 }
 
 .templateux-navbar.dark .templateux-menu li.active>a {
@@ -24097,4 +24100,20 @@ body .entries .entry:nth-child(2n) .title.big:before {
 .subscribe-box {
   display: inline-block;
   width: 33.33%;
+}
+
+.founders-title, .etguh-title{
+  font-size: 20px;
+}
+
+
+.founders{
+  border-bottom: solid 2px black;
+} {
+  font-size: 20px;
+}
+
+
+.founders{
+  border-bottom: solid 2px black;
 }
