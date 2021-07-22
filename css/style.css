@@ -335,13 +335,6 @@ template {
   display: none!important
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
@@ -565,17 +558,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto
-}
-
-.founders-row{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center; 
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px
 }
 
 .row {
@@ -23826,12 +23808,11 @@ textarea.form-control {
 }
 
 .block-person-1 .block-content .heading {
-  font-size: 18px;
+  font-size: 18px
 }
 
 .block-person-1 .block-content .subheading {
-  font-size: 16px;
-  text-align: center; 
+  font-size: 16px
 }
 
 .block-map-1 {
@@ -23893,7 +23874,6 @@ textarea.form-control {
 
 .team-names {
   font-size: 20px;
-  text-align: center;
   color: #02D97B;
   margin-bottom: 10px
 }
