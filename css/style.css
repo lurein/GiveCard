@@ -75,6 +75,13 @@ body {
   background-color: #fff
 }
 
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 [tabindex="-1"]:focus {
   outline: 0!important
 }
@@ -573,6 +580,17 @@ pre code {
 }
 .row .founders{
   justify-content: space-evenly;
+}
+
+.founders-row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
 }
 
 .no-gutters {
@@ -23820,6 +23838,7 @@ textarea.form-control {
 
 .block-person-1 .block-content .subheading {
   font-size: 16px;
+  text-align: center;
 }
 
 .block-map-1 {
@@ -23881,6 +23900,7 @@ textarea.form-control {
 
 .team-names {
   font-size: 20px;
+  text-align: center; 
   color: #02D97B;
   margin-bottom: 10px
 }
