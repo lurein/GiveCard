@@ -51,7 +51,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  overflow-x: hidden;
   -webkit-tap-highlight-color: transparent
 }
 
@@ -65,7 +64,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  overflow-x: hidden;
   font-family: "Work Sans", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -578,9 +576,6 @@ pre code {
   margin-right: -15px;
   margin-left: -15px
 }
-.row .founders{
-  justify-content: space-evenly;
-}
 
 .founders-row{
   display: -webkit-box;
@@ -608,7 +603,7 @@ pre code {
   ;
   min-height: 1px;
   min-width: 200px;
-  padding-right: 15px;
+  padding-right: 1px;
   padding-left: 15px;
   float: "right"
 }
@@ -23469,7 +23464,7 @@ h6 {
 }
 
 .templateux-navbar.dark .templateux-menu a:active, .templateux-navbar.dark .templateux-menu a:focus, .templateux-navbar.dark .templateux-menu a:hover {
-  color: #02D97B
+  color: rgb(108, 202, 31)
 }
 
 .templateux-navbar.dark .templateux-menu li.active>a {
@@ -23821,19 +23816,17 @@ textarea.form-control {
 
 .block-social li {
   display: inline-block;
-  font-size: 18px;
+  font-size: 18px
 }
 
 .block-person-1 img {
-  max-width: 150px;
-  height: 100px;
+  max-width: 100px;
   border-radius: 50%;
   margin: 0 auto 40px auto
 }
 
 .block-person-1 .block-content .heading {
-  font-size: 18px;
-  text-align: center;
+  font-size: 18px
 }
 
 .block-person-1 .block-content .subheading {
@@ -24124,22 +24117,4 @@ body .entries .entry:nth-child(2n) .title.big:before {
 .subscribe-box {
   display: inline-block;
   width: 33.33%;
-}
-
-.founders-title, .etguh-title{
-  font-size: 22px;
-}
-
-.founders{
-  border-bottom: solid 2px black;
-  font-size: 20px;
-  text-align: center;
-}
-
-.etguh-title{
-  padding: 10px 0px;
-}
-
-.second-row, .third-row, .fourth-row, .fifth-row{
-  text-align: center;
 }
