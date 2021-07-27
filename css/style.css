@@ -25640,7 +25640,7 @@ h6 {
 .templateux-navbar.dark .templateux-menu a:active,
 .templateux-navbar.dark .templateux-menu a:focus,
 .templateux-navbar.dark .templateux-menu a:hover {
-  color: rgb(108, 202, 31);
+  color: #02d97b;
 }
 
 .templateux-navbar.dark .templateux-menu li.active > a {
