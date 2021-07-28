@@ -92,6 +92,10 @@ body {
   width: 50%;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
