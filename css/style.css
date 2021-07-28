@@ -51,7 +51,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 @-ms-viewport {
@@ -69,6 +70,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
+  overflow-x: hidden;
   text-align: left;
   background-color: #fff
 }
@@ -585,7 +587,7 @@ pre code {
   ;
   min-height: 1px;
   min-width: 200px;
-  padding-right: 1px;
+  padding-right: 15px;
   padding-left: 15px;
   float: "right"
 }
