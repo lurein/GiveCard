@@ -2015,29 +2015,23 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 575.98px) {
-  .table-responsive-sm {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-  .table-responsive-sm > .table-bordered {
-    border: 0;
-  }
+.logo{
+  padding-top: 15px;
 }
 
-@media (max-width: 767.98px) {
-  .table-responsive-md {
+@media (max-width: 1199.98px) {
+  .table-responsive-xl {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  .table-responsive-md > .table-bordered {
+  .table-responsive-xl > .table-bordered {
     border: 0;
+  }
+  .logo{
+    padding-top: 16px;
   }
 }
 
@@ -2052,17 +2046,36 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+  .logo{
+    padding-top: 23px;
+  }
 }
 
-@media (max-width: 1199.98px) {
-  .table-responsive-xl {
+@media (max-width: 767.98px) {
+  .table-responsive-md {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  .table-responsive-xl > .table-bordered {
+  .table-responsive-md > .table-bordered {
+    border: 0;
+  }
+  .logo{
+    padding-top: 7px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive-sm > .table-bordered {
     border: 0;
   }
 }
