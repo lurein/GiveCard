@@ -11528,7 +11528,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
  */
 
 .hamburger {
-  padding: 15px 0px;
+  padding: 10px 0px 20px;
   display: inline-block;
   cursor: pointer;
   -webkit-transition-property: opacity, -webkit-filter;
