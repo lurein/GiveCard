@@ -2015,7 +2015,7 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-.logo{
+.logo {
   padding-top: 17px;
 }
 
@@ -2030,7 +2030,7 @@ pre code {
   .table-responsive-xl > .table-bordered {
     border: 0;
   }
-  .logo{
+  .logo {
     padding-top: 18px;
   }
 }
@@ -2046,7 +2046,7 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
-  .logo{
+  .logo {
     padding-top: 23px;
   }
 }
@@ -2062,7 +2062,7 @@ pre code {
   .table-responsive-md > .table-bordered {
     border: 0;
   }
-  .logo{
+  .logo {
     padding-top: 7px;
   }
 }
