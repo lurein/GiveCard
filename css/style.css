@@ -26313,3 +26313,12 @@ body .entries .entry:nth-child(2n) .title.big:before {
   display: inline-block;
   width: 33.33%;
 }
+
+.boxed {
+  border: 3px solid #02d97b;
+  padding: 5px;
+}
+
+.givecardgreen{
+  color: #02D97B;
+}
